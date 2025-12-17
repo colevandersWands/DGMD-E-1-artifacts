@@ -1,0 +1,96 @@
+[
+  {
+    "category": "binding",
+    "kind": "declarative",
+    "keyword": "let",
+    "name": "x",
+    "event": "initialize",
+    "value": {
+      "type": "number",
+      "instance": null,
+      "value": 1
+    },
+    "line": 1
+  },
+  {
+    "category": "binding",
+    "kind": "declarative",
+    "keyword": "let",
+    "name": "x",
+    "event": "available",
+    "line": 1
+  },
+  {
+    "category": "binding",
+    "kind": "declarative",
+    "keyword": "let",
+    "name": "y",
+    "event": "initialize",
+    "value": {
+      "type": "number",
+      "instance": null,
+      "value": 2
+    },
+    "line": 2
+  },
+  {
+    "category": "binding",
+    "kind": "declarative",
+    "keyword": "let",
+    "name": "x",
+    "event": "available",
+    "line": 2
+  },
+  {
+    "category": "binding",
+    "kind": "declarative",
+    "keyword": "let",
+    "name": "x",
+    "event": "read",
+    "value": {
+      "type": "number",
+      "instance": null,
+      "value": 1
+    },
+    "line": 4
+  },
+  {
+    "category": "binding",
+    "kind": "declarative",
+    "keyword": "let",
+    "name": "y",
+    "event": "read",
+    "value": {
+      "type": "number",
+      "instance": null,
+      "value": 2
+    },
+    "line": 4
+  },
+  {
+    "category": "binding",
+    "kind": "declarative",
+    "keyword": "let",
+    "name": "x",
+    "event": "assign",
+    "value": {
+      "type": "number",
+      "instance": null,
+      "value": 3
+    },
+    "line": 4
+  },
+  {
+    "category": "binding",
+    "kind": "declarative",
+    "keyword": "let",
+    "name": "x",
+    "event": "read",
+    "value": {
+      "type": "number",
+      "instance": null,
+      "value": 3
+    },
+    "line": 6
+  }
+]

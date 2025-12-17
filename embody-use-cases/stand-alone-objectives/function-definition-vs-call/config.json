@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "default": false,
+    "data": false,
+    "location": "line"
+  },
+  "lang": {
+    "functions": {
+      "kind": true,
+      "events": {
+        "call": {
+          "arguments": false
+        },
+        "definition": true
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+```mermaid
+graph LR
+    subgraph Continuum["Research/Practice & Theory/Design Continuum"]
+        style Continuum fill:#f9f9f9,stroke:#333,stroke-width:2px
+
+        RT["RT<br/>Research Theories<br/>━━━━━━━━━━━<br/>Phase 1.B:<br/>12 JS Notional Machines<br/>Trace Taxonomy<br/><br/>Validated through<br/>systematic literature"]
+
+        RD["RD<br/>Research Designs<br/>━━━━━━━━━━━<br/>Phase 3.A:<br/>Config Schemas<br/>Trace Requirements<br/><br/>Systematic<br/>theory-to-requirements"]
+
+        PT["PT<br/>Practice Theories<br/>━━━━━━━━━━━<br/>Phase 3.B & 4.A:<br/>Tool Developer Guides<br/>Use Case Frameworks<br/><br/>Useful heuristics<br/>for practitioners"]
+
+        PD["PD<br/>Practice Designs<br/>━━━━━━━━━━━<br/>Future Phase 4.B/5:<br/>Deployed Tools<br/>Impact Data<br/><br/>Evaluated by<br/>effectiveness"]
+
+        RT -->|"Embody<br/>spans"| RD
+        RD -->|"continuum"| PT
+        PT -.->|"will reach"| PD
+    end
+
+    subgraph Theory["Theory ↕ Design Axis"]
+        style Theory fill:#e1f5ff,stroke:#0066cc
+        T1["Understanding<br/>how people learn"]
+        T2["Designing<br/>for practice"]
+        T1 -.-> T2
+    end
+
+    subgraph Research["Research ↔ Practice Axis"]
+        style Research fill:#ffe6e6,stroke:#cc0000
+        R1["Methodology<br/>evaluation"]
+        R2["Effectiveness<br/>evaluation"]
+        R1 -.-> R2
+    end
+
+    Theory ~~~ Continuum
+    Continuum ~~~ Research
+
+    classDef embodyActive fill:#d4edda,stroke:#28a745,stroke-width:3px
+    classDef embodyFuture fill:#fff3cd,stroke:#ffc107,stroke-dasharray: 5 5
+
+    class RT,RD,PT embodyActive
+    class PD embodyFuture
+```
+
+## Key Insight
+
+**Embody spans RT → RD → PT simultaneously**, not sequentially:
+
+| Position | Embody's Presence | Evidence |
+|----------|-------------------|----------|
+| **RT** | Domain-specific theories | 12 JavaScript Notional Machines (`theory-to-requirements/4-notional-machines/`) |
+| **RD** | Research instruments | Trace configuration schemas, systematic requirements analysis |
+| **PT** | Practitioner heuristics | Tool developer taxonomy guides (`theory-to-requirements/1-taxonomies/`) |
+| **PD** | Future deployment | When Embody tools are used at scale, will generate impact data |
+
+This multi-position stance is **not unusual** for translational work—it's how Phase 4.A* trading zones function.
+
+## Why This Matters
+
+From Cole et al. (2023, p.4):
+> "No contribution is more important than another and it is a question of context, with different contributions being more valuable to different activities."
+
+Embody's span means:
+- **Researchers** can use it for RT-level theoretical work (testing notional machine theories)
+- **Research designers** can use it for RD-level experimental infrastructure
+- **Practitioners** can use it for PT-level tool development (trace-based debugging)
+- **Eventually**: PD-level deployed interventions will feed back to refine theories
+
+This is the **translational spectrum** in action—not a pipeline, but concurrent positioning across the continuum.

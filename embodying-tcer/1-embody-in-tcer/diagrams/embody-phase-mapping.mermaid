@@ -1,0 +1,169 @@
+```mermaid
+graph TB
+    subgraph legend[" "]
+        style legend fill:#f9f9f9,stroke:#ddd
+        L1["✓ ACTIVE: Direct contribution"]
+        L2["↗ ACCELERATES: Enables future work"]
+        L3["⏳ FUTURE: Will contribute when deployed"]
+    end
+
+    subgraph Phase1["Phase 1: Theory Development<br/>(Fundamental Research Realm)"]
+        style Phase1 fill:#e1f5ff,stroke:#0066cc,stroke-width:3px
+
+        P1B["Phase 1.B ✓ ACTIVE<br/>Domain-Specific Theories<br/>━━━━━━━━━━━━━━━━━━━<br/>• 12 JavaScript Notional Machines<br/>• Trace Event Taxonomy<br/>• Educational Configuration Framework<br/>• Variable Lifecycle Model<br/><br/>Evidence:<br/>theory-to-requirements/4-notional-machines/"]
+    end
+
+    subgraph Phase2["Phase 2: Controlled Experiments<br/>(Fundamental Research Realm)"]
+        style Phase2 fill:#ffe6e6,stroke:#cc0000,stroke-dasharray: 5 5
+
+        P2AB["Phase 2.A/B ↗ ACCELERATES<br/>Enables Future Experiments<br/>━━━━━━━━━━━━━━━━━━━<br/>• Provides measurement infrastructure<br/>• Enables trace-based studies<br/>• Allows granularity experiments<br/><br/>Future Work:<br/>Effect of trace detail on learning"]
+    end
+
+    subgraph Phase3["Phase 3: Research Synthesis<br/>(Synthesis Realm)"]
+        style Phase3 fill:#fff4e1,stroke:#ff9900,stroke-width:3px
+
+        P3A["Phase 3.A ✓ ACTIVE<br/>Researcher-Facing Synthesis<br/>━━━━━━━━━━━━━━━━━━━<br/>• Comprehensive Literature Reviews<br/>• 30+ Paper Bibliography<br/>• Evidence Hierarchy System<br/>• Methodology Documentation<br/><br/>Evidence:<br/>theory-to-requirements/0-literature-review/"]
+
+        P3B["Phase 3.B* ✓ ACTIVE (Trading Zone)<br/>Practitioner-Facing Guidelines<br/>━━━━━━━━━━━━━━━━━━━<br/>• Tool Developer Taxonomy Guides<br/>• Config-to-Pedagogy Mapping<br/>• Implementation Examples<br/>• 15 Concrete Tool Scenarios<br/><br/>Evidence:<br/>theory-to-requirements/1-taxonomies/"]
+    end
+
+    subgraph Phase4["Phase 4: Practice Research<br/>(Praxis Realm)"]
+        style Phase4 fill:#ffe1f5,stroke:#cc00cc,stroke-width:3px
+
+        P4A["Phase 4.A* ✓ ACTIVE (Trading Zone)<br/>Evidence-Based Prototype<br/>━━━━━━━━━━━━━━━━━━━<br/>• Embody Tracer Tool<br/>• Grounded in 30+ Research Papers<br/>• Validates Trace-Based Approaches<br/>• Coordinates Research & Practice<br/><br/>Evidence:<br/>The codebase itself"]
+
+        P4B["Phase 4.B* ⏳ FUTURE (Trading Zone)<br/>User Feedback & Reports<br/>━━━━━━━━━━━━━━━━━━━<br/>• Usage Data from Deployment<br/>• Tool Developer Feedback<br/>• Pattern Discovery<br/>• Theory Refinement Insights<br/><br/>Status:<br/>Awaits deployment"]
+    end
+
+    subgraph Phase5["Phase 5: Scaled Interventions<br/>(Praxis Realm)"]
+        style Phase5 fill:#e6ffe6,stroke:#00cc00,stroke-dasharray: 5 5
+
+        P5AB["Phase 5.A/B ↗ ACCELERATES<br/>Enables Scaled Deployment<br/>━━━━━━━━━━━━━━━━━━━<br/>• Infrastructure for Large-Scale Tools<br/>• Systematic Trace Collection<br/>• Impact Analysis Capability<br/><br/>Future Work:<br/>Multi-institution deployments"]
+    end
+
+    %% Forward Translation Arrows (Theory → Practice)
+    P1B -->|"informs<br/>(theories shape<br/>requirements)"| P3A
+    P1B -->|"requires<br/>(need tools to<br/>validate)"| P4A
+    P3A -->|"synthesizes<br/>for researchers"| P3B
+    P3A -->|"provides<br/>evidence base"| P4A
+    P3B -->|"guides<br/>implementation"| P4A
+    P4A -->|"will generate"| P4B
+    P4A -->|"enables"| P2AB
+    P4A -->|"enables"| P5AB
+
+    %% Reverse Translation Arrows (Practice → Theory)
+    P4B -.->|"will refine<br/>(usage informs<br/>theory)"| P1B
+    P4B -.->|"will update<br/>(feedback shapes<br/>synthesis)"| P3A
+    P2AB -.->|"will validate"| P1B
+    P5AB -.->|"will inform<br/>(impact data)"| P4B
+
+    %% Styling
+    style L1 fill:#d4edda,stroke:#28a745
+    style L2 fill:#fff3cd,stroke:#ffc107
+    style L3 fill:#d1ecf1,stroke:#17a2b8
+
+    %% Notes
+    classDef activePhase fill:#ccffcc,stroke:#00aa00,stroke-width:2px
+    classDef futurePhase fill:#ffffcc,stroke:#aaaa00,stroke-width:1px,stroke-dasharray: 5 5
+
+    %% Legend positioning hint
+    legend ~~~ Phase1
+```
+
+## Diagram Explanation
+
+### Active Contributions (✓)
+
+**Phase 1.B - Domain-Specific Theories**
+- Creating the 12 JavaScript Notional Machines
+- Developing trace event taxonomy
+- This is **theory development**, not theory application
+- Contributes to Theoretical CER body of knowledge
+
+**Phase 3.A - Researcher-Facing Synthesis**
+- Comprehensive literature reviews
+- Bibliography with 30+ papers
+- This is **research synthesis**, not just background reading
+- Contributes to State of the Art body of knowledge
+
+**Phase 3.B* - Practitioner-Facing Guidelines** (Trading Zone)
+- Tool developer taxonomy guides
+- Configuration-to-pedagogy mappings
+- This is **translation** for practitioners
+- Bridges research and practice
+
+**Phase 4.A* - Evidence-Based Prototype** (Trading Zone)
+- The Embody tracer itself
+- Grounded in evidence, designed for research
+- This is **prototyping as research**
+- Contributes to Applied CER body of knowledge
+
+### Accelerating Contributions (↗)
+
+**Phase 2.A/B - Controlled Experiments**
+- Embody **enables** future experimental work
+- Provides measurement infrastructure
+- Allows studies that weren't feasible before
+
+**Phase 5.A/B - Scaled Interventions**
+- Embody **enables** future large-scale deployment
+- Provides infrastructure for educational tools
+- Allows systematic impact analysis
+
+### Future Contributions (⏳)
+
+**Phase 4.B* - User Feedback & Reports** (Trading Zone)
+- Will generate data when deployed
+- Will provide insights for theory refinement
+- Creates feedback loop to Phase 1.B
+
+### Arrow Types
+
+**Solid arrows (→)**: Active forward translation
+- Theory informs synthesis
+- Synthesis guides prototyping
+- Prototyping enables experiments/scale
+
+**Dotted arrows (-.->)**: Future reverse translation
+- Usage will refine theories
+- Feedback will update synthesis
+- Impact will inform deployment
+
+### The Translational Spectrum
+
+This diagram visualizes **bidirectional flow**:
+
+```
+Phase 1 (Theory)
+    ↓ (forward: theories inform tools)
+Phase 3 (Synthesis)
+    ↓ (forward: synthesis guides practice)
+Phase 4 (Practice)
+    ↑ (reverse: practice refines theory)
+Phase 1 (Theory - refined)
+```
+
+This is the "translational science spectrum" - not a linear pipeline, but a cycle.
+
+### Trading Zones Highlighted
+
+Phases marked with * are trading zones:
+- **3.B***: Coordinates researchers and practitioners
+- **4.A***: Coordinates research, practice, and implementation
+- **4.B***: Will coordinate usage insights and research needs
+
+These are where **radically different activities coordinate locally**.
+
+### Realms Shown
+
+Colors indicate realms:
+- **Blue (Phase 1)**: Fundamental Research
+- **Orange (Phase 3)**: Synthesis
+- **Pink (Phase 4)**: Praxis
+- **Red/Green (Phase 2/5)**: Fundamental Research / Praxis (enabled)
+
+### Key Insight
+
+**Multi-phase presence is normal for translational work**. Embody doesn't "belong to" one phase—it **operates across multiple phases simultaneously** with feedback loops between them.
+
+This is exactly what the TCER model was designed to accommodate.

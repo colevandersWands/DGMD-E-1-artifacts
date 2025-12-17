@@ -1,0 +1,126 @@
+```mermaid
+graph TB
+    subgraph Phase1["Phase 1.B: Theory Development"]
+        style Phase1 fill:#e1f5ff,stroke:#0066cc,stroke-width:2px
+
+        T1["Notional Machines<br/>━━━━━━━━━━━<br/>What concepts<br/>matter for learning?"]
+        T2["Trace Requirements<br/>━━━━━━━━━━━<br/>What events<br/>should we capture?"]
+        T3["Misconception Patterns<br/>━━━━━━━━━━━<br/>What errors<br/>are diagnostic?"]
+    end
+
+    subgraph Phase4A["Phase 4.A*: Infrastructure Building"]
+        style Phase4A fill:#ffe1f5,stroke:#cc00cc,stroke-width:2px
+
+        I1["Configuration API<br/>━━━━━━━━━━━<br/>Granular control<br/>over trace detail"]
+        I2["Instrumentation Engine<br/>━━━━━━━━━━━<br/>Accurate event<br/>capture"]
+        I3["Trace Output Format<br/>━━━━━━━━━━━<br/>Structured data<br/>for analysis"]
+    end
+
+    subgraph Phase2Future["Phase 2.A/B: Enabled Experiments"]
+        style Phase2Future fill:#d1ecf1,stroke:#17a2b8,stroke-dasharray: 5 5
+
+        E1["Test Theories<br/>━━━━━━━━━━━<br/>Do students learn<br/>better with traces?"]
+        E2["Discover Patterns<br/>━━━━━━━━━━━<br/>What behaviors<br/>predict success?"]
+    end
+
+    subgraph Phase4BFuture["Phase 4.B: Feedback from Use"]
+        style Phase4BFuture fill:#fff3cd,stroke:#ffc107,stroke-dasharray: 5 5
+
+        F1["Tool Developer Reports<br/>━━━━━━━━━━━<br/>Which config options<br/>are actually used?"]
+        F2["Student Data<br/>━━━━━━━━━━━<br/>What trace features<br/>help learning?"]
+    end
+
+    %% Forward flow: Theory → Infrastructure → Research
+    T1 -->|"informs"| I1
+    T2 -->|"specifies"| I2
+    T3 -->|"guides"| I3
+
+    I1 -->|"enables"| E1
+    I2 -->|"enables"| E2
+    I3 -->|"enables"| E1
+
+    %% Backward flow: Use → Infrastructure Refinement → Theory Refinement
+    E1 -.->|"generates"| F1
+    E2 -.->|"generates"| F2
+
+    F1 -.->|"refines"| I1
+    F2 -.->|"refines"| I2
+
+    F1 -.->|"validates or<br/>challenges"| T1
+    F2 -.->|"refines"| T3
+
+    %% Co-evolution arrows
+    T1 <-->|"co-evolution"| I1
+    T2 <-->|"co-evolution"| I2
+
+    %% Legend
+    subgraph Legend[" "]
+        style Legend fill:#f9f9f9,stroke:#ddd
+        L1["→ Active Forward Flow<br/>(theory informs tools)"]
+        L2["-.-> Future Backward Flow<br/>(use refines theories)"]
+        L3["<--> Co-evolution<br/>(neither can advance alone)"]
+    end
+
+    Legend ~~~ Phase1
+
+    classDef active fill:#d4edda,stroke:#28a745,stroke-width:2px
+    classDef future fill:#ffffcc,stroke:#aaaa00,stroke-dasharray: 5 5
+
+    class T1,T2,T3,I1,I2,I3 active
+    class E1,E2,F1,F2 future
+```
+
+## The Co-evolution Pattern
+
+This diagram shows why **tool building IS theory development** in translational research:
+
+### Forward Translation (Active Now)
+
+1. **Theories → Infrastructure Requirements**
+   - Notional machines tell us *what* to measure
+   - Misconception research tells us *what* to look for
+   - Can't build a tracer without theoretical grounding
+
+2. **Infrastructure → Enabled Research**
+   - Embody makes trace-based studies feasible
+   - Researchers can now test theories that required this measurement
+   - Future Phase 2 experiments depend on Phase 4.A infrastructure
+
+### Reverse Translation (Future, When Deployed)
+
+3. **Usage → Infrastructure Refinement**
+   - Tool developers report which configs they actually use
+   - Performance data shows which features are practical
+   - Infrastructure adapts based on real-world constraints
+
+4. **Usage → Theory Refinement**
+   - Student data validates or challenges notional machine theories
+   - Unexpected patterns suggest new theoretical insights
+   - Theories evolve based on measurement-enabled discoveries
+
+### The Co-evolution Core
+
+The **double-headed arrows** between Phase 1.B and Phase 4.A show the key insight:
+
+- **Can't build without theory**: What would you trace if you had no notional machines?
+- **Can't test theory without tools**: How would you study execution models without traces?
+
+This is not sequential ("first theory, then tools") but **simultaneous, mutually dependent development**.
+
+### Why This Is Research
+
+Both sides of the co-evolution produce **new knowledge**:
+
+- **Phase 1.B output**: 12 JavaScript notional machines (didn't exist before)
+- **Phase 4.A output**: Configurable tracer infrastructure (enables research that wasn't feasible)
+
+The TCER model recognizes both as research contributions, not one as "real research" and the other as "just implementation."
+
+---
+
+**This pattern generalizes** to any infrastructure project where:
+1. Measurement requires domain theory
+2. Theory refinement requires measurement capability
+3. Neither can advance without the other
+
+See [README](../README.md) for how this co-evolution principle applies to Embody specifically.

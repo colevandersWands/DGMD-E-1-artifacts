@@ -1,0 +1,6 @@
+- behavior:
+  - ? initial and final values of variables in each scope (including the full program). args->returns/coroutines for functions
+- strategy:
+  - decision points - conditional checks, function calls, ... ?
+- implementation:
+  - everything

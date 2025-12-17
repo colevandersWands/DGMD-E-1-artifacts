@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "default": false,
+    "data": true,
+    "location": "line"
+  },
+  "lang": {
+    "operators": true
+  }
+}

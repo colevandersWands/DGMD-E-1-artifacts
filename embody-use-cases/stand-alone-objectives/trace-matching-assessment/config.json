@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "default": false,
+    "location": "line",
+    "data": "raw"
+  },
+  "lang": {
+    "bindings": {
+      "kind": {
+        "declarative": {
+          "let": true,
+          "const": true
+        }
+      },
+      "events": {
+        "initialize": true,
+        "available": true,
+        "assign": true,
+        "read": true
+      }
+    },
+    "operators": {
+      "default": true,
+      "coercion": false
+    }
+  }
+}

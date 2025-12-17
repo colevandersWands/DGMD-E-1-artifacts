@@ -1,0 +1,60 @@
+[
+  {
+    "index": 0,
+    "category": "operator",
+    "kind": "pure",
+    "operator": "+",
+    "operands": [
+      { "value": 1, "type": "number", "instance": null },
+      { "value": 2, "type": "number", "instance": null }
+    ],
+    "coercion": [
+      { "value": 1, "type": "number", "instance": null },
+      { "value": 2, "type": "number", "instance": null }
+    ],
+    "result": { "value": 3, "type": "number", "instance": null },
+    "line": 5
+  },
+  {
+    "index": 1,
+    "category": "operator",
+    "kind": "pure",
+    "operator": "-",
+    "operands": [{ "value": 3, "type": "number", "instance": null }],
+    "coercion": [{ "value": 3, "type": "number", "instance": null }],
+    "result": { "value": -3, "type": "number", "instance": null },
+    "line": 5
+  },
+  {
+    "index": 2,
+    "category": "operator",
+    "kind": "pure",
+    "operator": "*",
+    "operands": [
+      { "value": 3, "type": "number", "instance": null },
+      { "value": -3, "type": "number", "instance": null }
+    ],
+    "coercion": [
+      { "value": 3, "type": "number", "instance": null },
+      { "value": -3, "type": "number", "instance": null }
+    ],
+    "result": { "value": 0, "type": "number", "instance": null },
+    "line": 5
+  },
+  {
+    "index": 3,
+    "category": "operator",
+    "kind": "pure",
+    "operator": "/",
+    "operands": [
+      { "value": 0, "type": "number", "instance": null },
+      { "value": 2, "type": "number", "instance": null }
+    ],
+    "coercion": [
+      { "value": 0, "type": "number", "instance": null },
+      { "value": 2, "type": "number", "instance": null }
+    ],
+    "result": { "value": 0, "type": "number", "instance": null },
+    "line": 5
+  }
+]

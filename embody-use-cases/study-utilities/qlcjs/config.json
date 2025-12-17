@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "default": false,
+    "location": false,
+    "data": "raw"
+  },
+  "lang": {
+    "bindings": {
+      "kind": {
+        "declarative": {
+          "let": true,
+          "var": true
+        }
+      },
+      "events": {
+        "initialize": true,
+        "assign": true
+      },
+      "filter": ["i"]
+    }
+  }
+}

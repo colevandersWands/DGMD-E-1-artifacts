@@ -1,0 +1,99 @@
+Translational Sprints and Agile Research
+xxxxx xxxxx
+xxxxxx@xxxxx.xx
+xxxxxx xxxx, xxxxxxxxx xxxxxx
+xxxxxxxxx, xxxxxxxxx
+ABSTRACT
+In this talk we present Translational Sprints (TSs), a work-in-progress
+model for delivering rapid and affordable improvements to a cur-
+riculum in co-creation with learners and educators. Our model
+arose in response to questions such as; How can we balance the
+interests of current vs. future learners when conducting “real-time”
+experiments? How can we balance rigour & speed to best help
+learners? and How can we ensure educators and learners retain
+ownership while partnering with researchers? Translational Sprints
+apply qualitative, quantitative and design methodologies across 5
+different stages; (1) Challenge Scope: identify a challenge that can be
+addressed within your constraints. (2) Design Alternatives: design
+possible interventions based on experience and theory. (3) Empirical
+Validation: test interventions in a controlled setting. (4) Integra-
+tion Design: integrate validated interventions into the curriculum.
+(5) Intervention Packaging: document and publish interventions
+for educators facing similar constraints, and share your research
+methods for replication. Progress through the stages is cyclical; it is
+necessary to return to previous stages when you reach a dead end.
+Based on experience, working with limited resources, predecessors
+to this model have proven effective which encourages us to share
+our model as a blueprint. We are looking for research collabora-
+tors and for educators interested in testing Translational Sprints
+in their class. As a first step we intend to target affordable, short-
+term professional trainings as they can improve a learner’s career
+prospects, their shorter time frame enables rapid iteration, and they
+are generally free to innovate.
+KEYWORDS
+Translational Sprints, Open Education, Researcher/Practitioner Part-
+nerships, Translational Computing Education Research
+MOTIVATIONS
+Our experience as educators working outside of academic insti-
+tutions in short-term professional trainings has made it clear to
+us that many learners and educators are not aware of Comput-
+ing Education Research (CER), much less benefiting from it. Our
+primary motivation for pursuing Translational Sprints (TSs) is ex-
+ploring new ways to co-create quality, relevant, evidence-based
+education for all learners. This requires balancing the interests of
+Permission to make digital or hard copies of all or part of this work for personal or
+classroom use is granted without fee provided that copies are not made or distributed
+for profit or commercial advantage and that copies bear this notice and the full citation
+on the first page. Copyrights for components of this work owned by others than ACM
+must be honored. Abstracting with credit is permitted. To copy otherwise, or republish,
+to post on servers or to redistribute to lists, requires prior specific permission and/or a
+fee. Request permissions from permissions@acm.org.
+SIGCSE, March 15–18, 2023, Toronto, Ontario
+© 2023 Association for Computing Machinery.
+ACM ISBN 978-1-4503-XXXX-X/18/06. . . $15.00
+https://doi.org/XXXXXXX.XXXXXXX
+many stakeholders including researchers, educators, learners and
+industry partners. There have been research programs with a struc-
+ture similar to Translational Sprints [ 2], but we are not aware of a
+well-defined model for this type of work.
+We are also aware of limited diversity in the tech industry and
+the problems this creates for society. Broadening access to quality
+computing education is one step to increase representation in tech,
+building towards a future where the tech industry contributes to
+opportunity and social equity. However, social impact is not guar-
+anteed by Translational Sprints but will require a conscious effort
+from researchers, educators, learners as well as industry partners.
+Finally, we are looking for a way to balance competing interests
+in our own careers including; Making computing education open,
+usable, useful and used. Keeping a connection to the classroom.
+Contributing to the body of CER knowledge. and Staying in touch
+with best practices in development. Hopefully Translational Sprints
+can be one piece of the puzzle for us and others seeking to find a
+balanced career.
+CONTRIBUTIONS
+We believe the most significant contribution of our talk is to imagine
+a “native” R&D methodology for Computing Education Research.
+Translational Sprints borrow from academic research, instructional
+design, agile development and open education1 to imagine how
+researchers and practitioners can work together [ 1] to build new
+knowledge and improve learning outcomes.
+Translational Sprints can also provide opportunities for researchers
+to develop domain- and context-specific learning theories [3 ] that
+are only possible with the direct participation of learners and strong
+researcher/practitioner partnerships.
+Finally, if practised with transparency, we believe Translational
+Sprints offer a unique opportunity for educators to introduce the
+principles of research, design, collaboration, and project manage-
+ment. Depending on their level of experience, learners could even
+work alongside researchers improving their own education.
+REFERENCES
+[1] Jill Denner, Steve Bean, Shannon Campe, Jacob Martinez, and David Torres. 2019.
+Negotiating Trust, Power, and Culture in a Research-Practice Partnership. AERA
+Open 5, 2 (2019). https://doi.org/10.1177/2332858419858635
+[2] Steve Draper and Joseph Maguire. 2021. The Different Types of Contributions
+to Knowledge (in CER): All Needed, but Not All Recognised. ACM TOCE (2021).
+https://doi.org/10.1145/3487053
+[3] Lauri Malmi, Judy Sheard, Päivi Kinnunen, and Jane Sinclair. 2022. Develop-
+ment and Use of Domain-specific Learning Theories, Models and Instruments in
+Computing Education. ACM TOCE (2022). https://doi.org/10.1145/3530221
+1https://cnx.org/contents/2tQZVsKy@19/The-Reusability-Paradox

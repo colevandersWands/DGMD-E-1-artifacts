@@ -1,0 +1,57 @@
+graph TB
+    %% Stage 0 - Foundation
+    S0["<b>Stage 0: Relationship & Trust</b><br/>Stakeholder research<br/>Practitioner needs<br/><br/>✓ Complete"]
+
+    %% Stage 1 - Scoping
+    S1["<b>Stage 1: Challenge Scope</b><br/>Need neutral JS trace infrastructure<br/>Systematic constraints<br/><br/>✓ Complete"]
+
+    %% Stage 2 - Design
+    S2["<b>Stage 2: Design Alternatives</b><br/>12 notional machines<br/>Config schemas<br/>Theory-to-requirements<br/><br/>✓ Complete"]
+
+    %% Stage 3 - Validation
+    S3["<b>Stage 3: Experimental Validation</b><br/>Test trace-based theories<br/>Controlled studies<br/><br/>⏳ Future Phase 2.B work"]
+
+    %% Stage 4 - Integration
+    S4["<b>Stage 4: Integration Design</b><br/>Deploy in educational tools<br/>Gather feedback<br/><br/>⏳ Future Phase 4.B work"]
+
+    %% Stage 5 - Packaging
+    S5["<b>Stage 5: Intervention Packaging</b><br/>Complete methodology docs<br/>Theory-to-requirements/<br/>embodying-tcer/<br/><br/>✓ Complete"]
+
+    %% Linear progression through first iteration
+    S0 --> S1
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+
+    %% Cyclical returns - the core pattern
+    S5 -.->|"Stage 5 output<br/>enables future sprints"| FUTURE["<b>Future Sprints</b><br/>Others use Embody<br/>Skip months of tool building<br/>Focus on educational questions"]
+
+    S3 -.->|"Dead end or<br/>new insights"| S2
+    S4 -.->|"Feedback requires<br/>design changes"| S2
+    S5 -.->|"Next iteration<br/>cycle back"| S2
+
+    %% Stage 5 also feeds back to refinement
+    S3 -.->|"Validation data"| REFINE["<b>Refinement</b><br/>Update notional machines<br/>Adjust trace requirements<br/>Next Stage 5 documentation"]
+    S4 -.->|"Deployment feedback"| REFINE
+    REFINE -.-> S2
+
+    %% TCER Phase Mapping (annotations)
+    S0 -.->|"Foundation for"| TZ["<b>Trading Zones</b><br/>Phase 3.B*, 4.A*"]
+    S1 -.->|"Maps to"| P3A["<b>TCER Phase 3.A</b><br/>Synthesis"]
+    S2 -.->|"Maps to"| P1B["<b>TCER Phase 1.B</b><br/>Domain Theories"]
+    S2 -.->|"Maps to"| P4A["<b>TCER Phase 4.A*</b><br/>Prototypes"]
+    S3 -.->|"Maps to"| P2B["<b>TCER Phase 2.B</b><br/>Experiments"]
+    S4 -.->|"Maps to"| P4B["<b>TCER Phase 4.B*</b><br/>Feedback"]
+    S5 -.->|"Maps to"| P3B["<b>TCER Phase 3.B*</b><br/>Guidelines"]
+
+    %% Styling
+    classDef complete fill:#90EE90,stroke:#2E7D32,stroke-width:3px,color:#000
+    classDef future fill:#FFE4B5,stroke:#F57C00,stroke-width:2px,stroke-dasharray: 5 5,color:#000
+    classDef meta fill:#E3F2FD,stroke:#1976D2,stroke-width:2px,color:#000
+    classDef tcer fill:#F3E5F5,stroke:#7B1FA2,stroke-width:1px,color:#000
+
+    class S0,S1,S2,S5 complete
+    class S3,S4 future
+    class FUTURE,REFINE meta
+    class TZ,P1B,P2B,P3A,P3B,P4A,P4B tcer

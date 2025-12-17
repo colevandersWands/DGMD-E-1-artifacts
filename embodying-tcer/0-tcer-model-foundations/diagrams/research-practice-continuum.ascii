@@ -1,0 +1,226 @@
+# Research/Practice and Theory/Design Continuum
+# Recreation of TCER Model Figure 2 (Cole et al., 2023, p.4) with Embody position marked
+
+                    Research ←────────────────────────────────→ Practice
+                        │                                           │
+                        │                                           │
+            Theory      │         RT        │         PT            │
+              ↕         │                   │                       │
+                        │    ┌──────────────┼──────────────┐        │
+                        │    │              │              │        │
+                        │    │   Research   │   Practice   │        │
+                        │    │   Theories   │   Theories   │        │
+                        │    │              │              │        │
+                        │    │  Validated   │  Heuristics  │        │
+                        │    │  with        │  useful for  │        │
+                        │    │  methodology │  practice    │        │
+                        │    │              │              │        │
+                        │    └──────────────┼──────────────┘        │
+                        │                   │                       │
+              ─ ─ ─ ─ ─ ┼ ─ ─ ─ ─ ─ ─ ─ ─ ─┼─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┼ ─ ─ ─
+                        │                   │                       │
+                        │    ┌──────────────┼──────────────┐        │
+                        │    │              │              │        │
+                        │    │   Research   │   Practice   │        │
+                        │    │   Designs    │   Designs    │        │
+                        │    │              │              │        │
+                        │    │  Created     │  Created     │        │
+                        │    │  for         │  for         │        │
+                        │    │  literature  │  impact      │        │
+                        │    │              │              │        │
+                        │    └──────────────┼──────────────┘        │
+            Design      │         RD        │         PD            │
+              ↕         │                   │                       │
+                        │                   │                       │
+                        └───────────────────┴───────────────────────┘
+
+
+## Four Quadrants Explained:
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│  RT (Research Theories) - Top Left                                      │
+│  ─────────────────────────────────────────────────────────────────      │
+│  • Methodologically and empirically validated theories of CE            │
+│  • Example: Notional machines validated through controlled experiments  │
+│  • Evaluated by: Research methodology                                   │
+│  • Contributes to: CE understanding                                     │
+└─────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│  RD (Research Designs) - Bottom Left                                    │
+│  ─────────────────────────────────────────────────────────────────────  │
+│  • Designs created with strict methodology for literature               │
+│  • Example: Experimental curriculum design for theory testing           │
+│  • Evaluated by: Research methodology                                   │
+│  • Contributes to: CE practice (via research)                           │
+└─────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│  PT (Practice Theories) - Top Right                                     │
+│  ─────────────────────────────────────────────────────────────────────  │
+│  • Useful theories/heuristics for practitioners                         │
+│  • Example: "Students struggle with pointers" (observed, not validated) │
+│  • Evaluated by: Usefulness in practice                                 │
+│  • Contributes to: CE understanding (practitioner knowledge)            │
+└─────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│  PD (Practice Designs) - Bottom Right                                   │
+│  ─────────────────────────────────────────────────────────────────────  │
+│  • Designs created for impact, may/may not be evidence-based            │
+│  • Example: Commercial educational tools, deployed curricula            │
+│  • Evaluated by: Effectiveness in practice                              │
+│  • Contributes to: CE practice                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+
+
+## Embody's Position on the Continuum:
+
+        Research                                                    Practice
+            ├───────────────────────────────────────────────────────────┤
+            │                                                           │
+         [START]                                                      [END]
+            │                                                           │
+    Phase 1.B: Domain-Specific Theories                                │
+            │ (12 JS Notional Machines)                                │
+            ├─────→ RT: Research Theories                              │
+            │                                                           │
+            │                                                           │
+    Phase 3.A: Researcher-Facing Synthesis                             │
+            │ (Literature Reviews, Evidence Hierarchy)                 │
+            ├─────→ RT: Research Theories + RD: Research Designs       │
+            │                                                           │
+            │                                                           │
+    Phase 3.B: Practitioner-Facing Guidelines                          │
+            │ (Tool Developer Guides, Config Mappings)                 │
+            ├─────→ RD: Research Designs → PT: Practice Theories       │
+            │                                                           │
+            │                                                           │
+    Phase 4.A: Evidence-Based Prototype                                │
+            │ (Embody Tracer Itself)                                   │
+            └─────→ PT: Practice Theories ───────────────→ (toward PD) │
+                                                                        │
+                                                                        │
+                                        Future Phase 4.B/5.A will reach PD
+
+
+## Key Insights:
+
+1. EMBODY SPANS THE CONTINUUM
+   ────────────────────────────
+   • Starts at pure Research Theory (Phase 1.B theoretical contributions)
+   • Moves through Research Design (Phase 3.A/B synthesis work)
+   • Extends into Practice Theory (Phase 3.B/4.A tool development)
+   • Single project occupies multiple positions simultaneously
+
+2. THIS IS EXPECTED AND VALUED
+   ────────────────────────────
+   • From the paper: "No contribution is more important than another"
+   • Different positions serve different stakeholders
+   • Spanning continuum = translational work
+
+3. NOT A ONE-WAY JOURNEY
+   ──────────────────────
+   • The continuum shows positions, not temporal progression
+   • Work doesn't "move from" RT "to" PD
+   • Embody maintains all positions concurrently
+   • Bidirectional: Practice insights inform theory refinement
+
+4. NEUTRALITY ENABLES SPAN
+   ────────────────────────
+   • Embody's theory-neutrality allows it to serve:
+     - Researchers (RT/RD needs)
+     - Practitioners (PT/PD needs)
+   • Same infrastructure, multiple uses
+   • This is the power of Phase 4.A trading zones
+
+
+## Comparison to Pasteur's Quadrant:
+
+The TCER continuum differs from Pasteur's Quadrant:
+
+Pasteur's Quadrant (Binary):
+
+         High             │  Pure Basic    │  Use-Inspired
+    Considerations        │   Research     │    Research
+      of Use              │                │  (Pasteur's)
+         Low              │  Pure Applied  │
+                          └────────────────┴──────────────
+                                Low    Quest for      High
+                                    Fundamental Understanding
+
+
+TCER Continuum (Sliding Scale):
+
+         All four quadrants valued
+         Different axes (Research/Practice vs. Understanding/Use)
+         Not binary (positions are continuous, not categorical)
+         Multiple simultaneous positions possible
+
+
+## How Phases Map to Continuum:
+
+┌──────────────────┬─────────────────────────────────────────────┐
+│  TCER Phase      │  Typical Continuum Position                 │
+├──────────────────┼─────────────────────────────────────────────┤
+│  Phase 1         │  RT (pure research theories)                │
+│  Phase 2         │  RT, RD (theories + experimental designs)   │
+│  Phase 3.A       │  RT, RD (research synthesis)                │
+│  Phase 3.B       │  RD, PT (practitioner synthesis)            │
+│  Phase 4.A       │  PT, (→PD) (evidence-based prototypes)      │
+│  Phase 4.B       │  PT, PD (practice insights)                 │
+│  Phase 5.A       │  PD (scaled interventions)                  │
+│  Phase 5.B       │  PD (→back to RT) (impact analysis)         │
+└──────────────────┴─────────────────────────────────────────────┘
+
+Note: Arrows (→) indicate typical flows, but bidirectionality means
+      all phases can inform all positions on the continuum.
+
+
+## Bottom of Figure 1 Representation:
+
+From the TCER model paper, the continuum is shown at the bottom:
+
+    Research                                                      Practice
+      Theory    RT    RT, RD    PT, PD    PD                       Design
+        ├────────┼───────┼────────┼────────┼────────────────────────┤
+                                ↑
+                          Embody spans
+                        RT → RD → PT
+
+This visualization shows the gradual shift from pure research theory
+through mixed positions toward pure practice design.
+
+
+## Relation to Bodies of Knowledge:
+
+The continuum also maps to which Bodies of Knowledge are emphasized:
+
+    RT ────→ Theoretical CER (Phase 1)
+    RD ────→ Experimental CER (Phase 2) + Applied CER (Phase 4)
+    PT ────→ State of the Art (Phase 3) + Applied CER (Phase 4)
+    PD ────→ Applied CER (Phase 4) + Educational Impact (Phase 5)
+
+
+Embody's span (RT → RD → PT) means it contributes to:
+    ✓ Theoretical CER (1.B domain-specific theories)
+    ✓ Experimental CER (enabling 2.B experiments)
+    ✓ State of the Art (3.A/B synthesis)
+    ✓ Applied CER (4.A prototype)
+
+
+═══════════════════════════════════════════════════════════════════════════
+
+SUMMARY:
+────────
+
+The Research/Practice and Theory/Design continuum is a 2D space defining
+contribution types. Embody spans from RT (research theories) through RD
+(research designs) to PT (practice theories), exemplifying translational
+work that bridges multiple positions simultaneously.
+
+This spanning is not unusual—it's precisely what TCER Phase 4.A activities
+in trading zones are designed to do: coordinate research and practice by
+occupying multiple continuum positions.
+
+═══════════════════════════════════════════════════════════════════════════

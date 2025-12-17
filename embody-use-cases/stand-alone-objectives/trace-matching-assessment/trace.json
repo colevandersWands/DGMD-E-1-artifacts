@@ -1,0 +1,88 @@
+[
+  {
+    "index": 0,
+    "category": "binding",
+    "kind": "declarative",
+    "keyword": "let",
+    "name": "a",
+    "event": "initialize",
+    "value": 1,
+    "loc": 3
+  },
+  {
+    "index": 1,
+    "category": "binding",
+    "kind": "declarative",
+    "keyword": "let",
+    "name": "a",
+    "event": "available",
+    "loc": 3
+  },
+  {
+    "index": 2,
+    "category": "binding",
+    "kind": "declarative",
+    "keyword": "let",
+    "name": "b",
+    "event": "initialize",
+    "value": 2,
+    "loc": 4
+  },
+  {
+    "index": 3,
+    "category": "binding",
+    "kind": "declarative",
+    "keyword": "let",
+    "name": "b",
+    "event": "available",
+    "loc": 4
+  },
+  {
+    "index": 4,
+    "category": "binding",
+    "kind": "declarative",
+    "keyword": "let",
+    "name": "a",
+    "event": "read",
+    "value": 1,
+    "loc": 3
+  },
+  {
+    "index": 5,
+    "category": "binding",
+    "kind": "declarative",
+    "keyword": "let",
+    "name": "b",
+    "event": "read",
+    "value": 2,
+    "loc": 3
+  },
+  {
+    "index": 6,
+    "category": "operator",
+    "kind": "pure",
+    "operator": "+",
+    "operands": [1, 2],
+    "result": 3
+  },
+  {
+    "index": 7,
+    "category": "binding",
+    "kind": "declarative",
+    "keyword": "let",
+    "name": "c",
+    "event": "initialize",
+    "value": 3,
+    "loc": 6
+  },
+  {
+    "index": 8,
+    "category": "binding",
+    "kind": "declarative",
+    "keyword": "let",
+    "name": "c",
+    "event": "available",
+    "value": 3,
+    "loc": 6
+  }
+]
