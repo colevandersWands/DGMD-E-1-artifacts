@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Embody + AI Storytelling Demo</title>
+
+    <!-- Keep Prism with a nice theme -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+      rel="stylesheet"
+    />
+    <!-- Prism line-highlight plugin CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-highlight/prism-line-highlight.min.css"
+      rel="stylesheet"
+    />
+    <!-- Prism line-numbers plugin CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Top Configuration Bar -->
+    <section class="config-bar">
+      <div class="config-row">
+        <!-- Line Range -->
+        <div class="config-item">
+          <label>line range</label>
+          <div class="line-range">
+            <span class="range-bound">1</span>
+            <input type="range" id="lineStart" min="1" max="16" value="7" class="range-start" />
+            <span id="lineStartVal" class="range-value">7</span>
+            <span class="range-separator">—</span>
+            <input type="range" id="lineEnd" min="1" max="16" value="12" class="range-end" />
+            <span id="lineEndVal" class="range-value">12</span>
+            <span class="range-bound">16</span>
+          </div>
+        </div>
+
+        <!-- Language Features -->
+        <div class="config-item">
+          <label>language features</label>
+          <select id="languageFeatures" class="feature-select">
+            <option>[dropdown select]</option>
+            <option>async/await</option>
+            <option>loops</option>
+            <option>conditionals</option>
+            <option>functions</option>
+            <option>all features</option>
+          </select>
+        </div>
+
+        <!-- Detail Level -->
+        <div class="config-item">
+          <label>detail</label>
+          <div class="slider-container">
+            <span class="slider-label">less</span>
+            <input type="range" id="detailLevel" min="1" max="5" value="3" class="detail-slider" />
+            <span class="slider-label">more</span>
+          </div>
+        </div>
+
+        <!-- Metaphoricality -->
+        <div class="config-item">
+          <label>metaphoricality</label>
+          <div class="slider-container">
+            <span class="slider-label">less</span>
+            <input
+              type="range"
+              id="metaphorLevel"
+              min="1"
+              max="5"
+              value="3"
+              class="metaphor-slider"
+            />
+            <span class="slider-label">more</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="config-row">
+        <!-- Style/Metaphor -->
+        <div class="config-item wide">
+          <label>style / metaphor</label>
+          <input type="text" id="styleMetaphor" placeholder="[text field]" class="text-input" />
+        </div>
+
+        <!-- Questions -->
+        <div class="config-item wide">
+          <label>specific ?'s or uncertainties</label>
+          <input type="text" id="questions" placeholder="[text field]" class="text-input" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Generate Button -->
+    <section class="generate-section">
+      <button id="generateBtn" class="generate-btn">
+        generate story in
+        <select id="languageSelect" class="inline-select">
+          <option>English</option>
+          <option>Spanish</option>
+          <option>French</option>
+          <option>Portuguese</option>
+          <option>Chinese</option>
+          <option>Malayalam</option>
+          <option>Malagasy</option>
+        </select>
+      </button>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="main-panels">
+      <!-- Source Code Panel -->
+      <section class="panel code-panel">
+        <div class="panel-header">
+          <h3>Source Code</h3>
+        </div>
+        <div id="codeEditor" class="code-editor"></div>
+      </section>
+
+      <!-- Memory Visualization Panel -->
+      <section class="panel memory-panel">
+        <div class="panel-header">
+          <h3>Environment Visualization</h3>
+        </div>
+        <div id="memoryViz" class="memory-viz">
+          <div class="scope-box global-scope">
+            <h4>Scope:</h4>
+            <div class="variable">variable: val</div>
+          </div>
+          <div class="scope-box function-scope">
+            <h4>Scope:</h4>
+            <div class="variable">variable: val</div>
+            <div class="variable">variable:</div>
+            <div class="reference-arrow">↘</div>
+          </div>
+          <div class="heap-section">
+            <h4>Heap:</h4>
+            <div class="data-structure">
+              <span>data</span>
+              <span>structure</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Story Panel -->
+      <section class="panel story-panel">
+        <div class="panel-header">
+          <h3>Metaphorical story explaining the program</h3>
+        </div>
+        <div id="storyDisplay" class="story-display">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+          </p>
+          <p class="story-highlight">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Timeline Scrubber -->
+    <section class="timeline-bar">
+      <button id="skipStart" class="timeline-btn skip-start">&lt;|</button>
+      <button id="stepBack" class="timeline-btn step-back">&lt;&lt;</button>
+      <div class="timeline-container">
+        <input type="range" id="timeline" min="0" max="100" value="30" class="timeline-slider" />
+        <div class="step-markers" id="stepMarkers"></div>
+      </div>
+      <button id="stepForward" class="timeline-btn step-forward">&gt;&gt;</button>
+      <button id="skipEnd" class="timeline-btn skip-end">|&gt;</button>
+      <div class="timeline-info">
+        <span id="currentEvent">Event: --</span>
+        <span id="currentStep">Step: 30</span>
+      </div>
+    </section>
+
+    <!-- Keep Prism for syntax highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <!-- Prism line-highlight plugin JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
+    <!-- Prism line-numbers plugin JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
+    <!-- Main app module -->
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

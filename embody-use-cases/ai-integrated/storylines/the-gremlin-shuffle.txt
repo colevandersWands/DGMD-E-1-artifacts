@@ -1,0 +1,19 @@
+THE GREMLIN & THE SPELL OF TRANSFERENCE
+
+A gremlin approaches a blank chalkboard, clutching an ancient scroll that glows faintly.
+
+"The Ritual of Value Exchange," it whispers, unrolling the parchment with reverence.
+
+"`let a = 2;`" — The first incantation! The gremlin draws a box labeled [a] and inscribes "2" within.
+"`let b = 1;`" — Another verse. A second box [b] appears, blessed with "1".
+"`let temp;`" — The third chant. Box [temp] materializes, empty and waiting.
+
+"Now for the transference spell," the gremlin mutters, chalk trembling.
+
+"`temp = a;`" — It peers into [a], sees the sacred 2, duplicates it into [temp].
+"`a = b;`" — Gazing at [b]'s 1, it erases [a]'s old mark, inscribing the new.
+"`b = temp;`" — Finally, [temp]'s 2 flows into [b], completing the exchange.
+
+The gremlin steps back, exhausted. The ritual is complete: [a] holds 1, [b] holds 2.
+
+"The ancient magic works!" it gasps. The values have danced their mystical swap.

@@ -9,3 +9,7 @@ Enable learners to generate stories (not just explanations!) of how their progra
 - analysis & evaluation of variable names by mapping program structure, variable roles and program domain (does not exist, but can be built)
 
 Configuration options allow learners to tailor the story generated to their learning focus and prefered metaphors.
+
+## Pitfall: Imperfect Metaphors
+
+LLMs are not guaranteed to produce accurate metaphors, even when provided with accurate data. Case in point? This demo. I had to work with the LLM through several iterations to generate a metaphor that doesn't promote a misconception, for example: boxes & cups -> values are removed from one variable when assigned to another.
