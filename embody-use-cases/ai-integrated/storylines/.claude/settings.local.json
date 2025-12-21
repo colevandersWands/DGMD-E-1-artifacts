@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/master/Documents/0-teach-code/0---the-big-idea/00--evancole-be/0--snippetry/dump/00-claude-refactoring/0--study-lenses--it-begins/aran-spering/embody/.plann/DGMD-E-1-artifacts/embody-use-cases/**)",
+      "Read(//Users/master/Documents/0-teach-code/0---the-big-idea/00--evancole-be/0--snippetry/dump/00-claude-refactoring/0--study-lenses--it-begins/aran-spering/embody/**)",
+      "Read(//Users/master/Documents/0-teach-code/0---the-big-idea/00--evancole-be/0--snippetry/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
